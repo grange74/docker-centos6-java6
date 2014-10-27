@@ -6,13 +6,12 @@ MAINTAINER Nicolas Grange "grange74@gmail.com"
 # it does unfortunately make it less readable so i try to explain each step:
 # 1. download/install wget
 # 2. pull down the Oracle Java 6 rpm bin file using wget
-# 3. delete wget as we no longer need it
-# 4. change permissions on the download bin file to make it executable
-# 5. extract the bin file into an rpm
-# 6. delete the bin file
-# 7. install Java 6 via the rpm
-# 8. delete the rpm file
-# 9. ask yum to clean itself up
+# 3. change permissions on the download bin file to make it executable
+# 4. extract the bin file into an rpm
+# 5. delete the bin file
+# 6. install Java 6 via the rpm
+# 7. delete the rpm file
+# 8. ask yum to clean itself up
 RUN yum -y install wget && \
 	wget --no-cookies \
          --no-check-certificate \
